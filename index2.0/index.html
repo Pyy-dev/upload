@@ -1,0 +1,89 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>青年大学习提交</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link href="./Wopop_files/style_log.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./Wopop_files/style.css">
+<link rel="stylesheet" type="text/css" href="./Wopop_files/userpanel.css">
+<link rel="stylesheet" type="text/css" href="./Wopop_files/jquery.ui.all.css">
+
+</head>
+
+<body class="login" mycollectionplug="bind">
+<div class="login_m">
+<div class="login_logo"><img src="./Wopop_files/logo.png" width="196" height="46"></div>
+<div class="login_boder">
+
+<div class="login_padding" id="login_model">
+<form action="upload_file.php" method="post" enctype="multipart/form-data">
+  <h2>学号</h2>
+  <label>
+    <input type="txt" name="id" id="id" placeholder="例如：2019533400某某某" required class="txt_input txt_input2" onfocus="if (value ==&#39;Your name&#39;){value =&#39;&#39;}" onblur="if (value ==&#39;&#39;){value=&#39;Your name&#39;}" minlength="10" maxlength="10" >
+  </label>
+  <h2>截图</h2>
+  <label>
+    <input type="file" name="file" id="file" required class="txt_input" onfocus="if (value ==&#39;******&#39;){value =&#39;&#39;}" onblur="if (value ==&#39;&#39;){value=&#39;******&#39;}" value="******">
+  </label>
+ 
+ 
+
+ 
+  <p class="forgot"><a id="iforget" href="javascript:void(0);">抱歉没有这个选项</a></p>
+  <div class="rem_sub">
+  <div class="rem_sub_l">
+   </div>
+    <label>
+      <input type="submit" class="sub_button" name="button" id="button" value="点我提交" style="opacity: 0.7;" onclick="sevauser()">
+    </label>
+  </div>
+</div>
+
+<div class="copyrights"><a href="http://www.cssmoban.com/" ></a></div>
+
+<div id="forget_model" class="login_padding" style="display:none">
+<br>
+
+   <h1></h1>
+   <br>
+   <div class="forget_model_h2"></div>
+    <label>
+    <input type="text" id="usrmail" class="txt_input txt_input2">
+   </label>
+
+ 
+  <div class="rem_sub">
+  <div class="rem_sub_l">
+   </div>
+    <label>
+     <input type="submit" class="sub_buttons" name="button" id="Retrievenow" value="Retrieve now" style="opacity: 0.7;">
+     　　　
+     <input type="submit" class="sub_button" name="button" id="denglou" value="Return" style="opacity: 0.7;">　　
+    
+    </label>
+  </div>
+</div>
+
+
+
+
+
+
+<!--login_padding  Sign up end-->
+</div><!--login_boder end-->
+</div><!--login_m end-->
+ <br> <br>
+<p align="center"> 来自<a href="http://wpa.qq.com/msgrd?v=3&uin=1741622032&site=qq&menu=yes" target="_blank" title="模板之家">@水星sur</a> -ICP备案  <a href="http://www.beian.miit.gov.cn/?spm=5176.12818093.0.0.488716d0WZhko4" title="网页模板" target="_blank">浙ICP备20005372号</a></p>
+
+<script>
+document.getElementById('usename').value = localStorage.getItem('username');
+function sevauser(){
+localStorage.setItem('username',document.getElementById('usename').value);
+}
+
+</script>
+
+</body></html>
+
+
